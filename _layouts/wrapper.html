@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+     <br>
+     {% include header.html %}
+
+     
+    {% for post in site.posts%}
+    <li style="{% if page.url == post.url %}  color:red {%endif%}"  ><a style="{% if page.url == post.url %}  color:red {%endif%}"href="{{post.url}}">{{post.title}}</a></li>
+
+    {% endfor %}
+    <hr>
+
+    {{content}}
+    <br>
+</body>
+</html>
