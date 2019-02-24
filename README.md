@@ -1,2 +1,2 @@
-# vangalist.github.io
+# vanga.github.io
 My Personal Webpage
